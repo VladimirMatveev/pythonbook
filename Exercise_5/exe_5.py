@@ -22,16 +22,16 @@ print('3)',questions[2],'\n', answers[2])
 
 #Выведите на экран следующее стихотворение, используя старый стиль форматирования.
 #Подставьте в него такие строки: 'roast beef', 'ham', 'head' и 'clam':
-sho1 = 'roast beef'
-sho2 = 'ham'
-sho3 = 'head'
-sho4 = 'clam'
+beef = 'roast beef'
+ham = 'ham'
+head = 'head'
+clam = 'clam'
 
-namea = '''My kitty cat likes %s,
+name = '''My kitty cat likes %s,
 My kitty cat likes %s,
 My kitty cat fell on his %s
-And now thinks he's a %s.''' % (sho1, sho2, sho3, sho4)
-print(namea,'\n')
+And now thinks he's a %s.''' % (beef, ham, head, clam)
+print(name,'\n')
 
 #Напишите письмо с использованием нового стиля форматирования. Сохраните
 #предложенную строку в переменной letter (она понадобится вам в упражнении
