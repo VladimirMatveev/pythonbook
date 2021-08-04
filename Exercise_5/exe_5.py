@@ -36,16 +36,6 @@ print(namea,'\n')
 #Напишите письмо с использованием нового стиля форматирования. Сохраните
 #предложенную строку в переменной letter (она понадобится вам в упражнении
 #ниже):
-salutation = 'Mr'
-name = 'Siktir Byrdan'
-product = 'shoe rack'
-verbed = 'stood'
-room = 'bedroom'
-animals = 'dog'
-amount = 'amount' #?
-percent = '138'
-spokesman = 'OOO Shoe Rack'
-job_title = 'GOODJOB'
 letter = '''Dear {salutation} {name},
 Thank you for your letter. We are sorry that our {product}
 {verbed} in your {room}. Please note that it should never
