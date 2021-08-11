@@ -29,10 +29,10 @@ print(even,'\n------------------------------------------')
 
 
 #---------------------(7.11)--------------------------#
-#????????????????????????????????????????????????????????
+
 start1 = ["fee", "fie", "foe"]
 rhymes = [
- ("flop", "get a mop"),
+ ("flop", " aget mop"),
  ("fope", "turn the rope"),
  ("fa", "get your ma"),
  ("fudge", "call the judge"),
@@ -41,14 +41,15 @@ rhymes = [
  ("fun", "say we're done"),
  ]
 start2 = "Someone better"
-first = start1
-for first in first:
-    first = first.capitalize()
-    print(first, ' !')
-#????????????????????????????????????????????????????????
 
 
-#выведите на экран значение переменной first, также записав его с большой буквы и с восклицательным знаком на конце.
-# Для второй строки:
-#выведите на экран значение переменной start2 и пробел;
-#выведите на экран значение переменной second и точку
+for elem in rhymes:
+    #("flop", " aget mop")
+    first = elem[0]
+    second = elem[1]
+    for start1_elem in start1:
+        print(start1_elem.capitalize(), ' !')
+    print(first.capitalize(), ' !')
+    print(start2, ' ')
+    print(second, '.')
+    print('----------------------------------')
