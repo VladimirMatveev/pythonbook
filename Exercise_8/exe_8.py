@@ -1,27 +1,30 @@
 #-------------------8.1-8.2--------------------------#
 ef2 = {
-'Sobaka': ['dog','chien'],
-'Kot': ['cat','chat'],
-'Morj': ['walrus','morse'],
+  'dog': 'chien',
+  'cat': 'chat',
+  'walrus': 'morse',
 }
 print(ef2)
-print(ef2['Morj'][1])
-
-#-------------------8.3-8.5--------------------------#
-f2e = ef2
-print(f2e.items())
-print(f2e['Sobaka'][0])
-
-print([value[0] for value in f2e.values()])
+for word in ef2.values():
+   print(word)
 print('==================================================')
-
+#-------------------8.3-8.5--------------------------#
+f2e = {
+  'chien':   'dog',
+  'chat': 'cat',
+  'morse': 'walrus',
+}
+print(f2e['chien'])
+for word in f2e.values():
+   print(word)
+print('==================================================')
 #-------------------8.6-8.9--------------------------#
-anima = {
+animals_list = {
          'cats': ['Henri','Grumpy','Lucy'],
          'octopi': '',
          'emus': ''}
 life = {
-    'animals': anima,
+    'animals': animals_list,
     'plants' : '',
     'other' : ''
 }
@@ -58,6 +61,6 @@ print('==================================================')
 titles = ['Creature of Habit', 'Crewel Fate', 'Sharks On a Plane']
 plots = ['A nun turns into a monster', 'A haunted yarn shop', 'Check your exits']
 movies = {movies for movies in zip(titles, plots)}
-print(movies)
+print(dict(movies))
 #Используйте функцию zip(), чтобы создать словарь с именем movies, в котором объединены списки titles и plots
 
