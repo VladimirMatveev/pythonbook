@@ -27,20 +27,22 @@ for x in ranger:
 #третье возвращенное значение.
 print('==================================================')
 
-def test(funct):
+def test(func):
     def start():
         print('start')
-        funct()
+        func()
+        print('end')
     return start
 
 @test
 def foo():
-    print('end')
+    print('Это из функции')
 
 foo()
+
+
+
 #object = test(object)
-
-
 #. Определите декоратор test, который выводит строку 'start'
 # при вызове функции и строку 'end', когда функция
 # завершает свою работу
@@ -65,4 +67,14 @@ def knights2(saying):
 a = knights2('cat')
 print(a())
 
+print('--------------------------------')
+
+def sumrise(num):
+    return sumrise(num + 1)
+
+try:
+    sumrise(1)
+except Exception as error:
+    print(error)
+    print('Error')
 
